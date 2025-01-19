@@ -21,7 +21,9 @@ public class InputParser {
 
         int schuurNumber = Integer.parseInt(line);
 
-        if (schuurNumber == 0) break;
+        if (schuurNumber == 0) {
+          break;
+        }
 
         List<List<Integer>> flutBoxesInSchuur = new ArrayList<>();
         List<Integer> numberOfBoxesInPile = new ArrayList<>();
