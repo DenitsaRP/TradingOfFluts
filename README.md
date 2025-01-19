@@ -12,7 +12,7 @@
 
 ## Run Instructions
 1. Start the application: `mvn spring-boot:run`.
-2. Use the `/api/v1/trade/calculate` endpoint to upload a text file containing the input data.
+2. Use the `/api/v1/trade/calculate` endpoint to upload a text file containing the input data. \
 2.1 Such a file could be found under `example_input/input.txt`.\
 2.2 Use the following curl command to upload the file:
 ```shell
