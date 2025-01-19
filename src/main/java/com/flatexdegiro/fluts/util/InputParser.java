@@ -16,16 +16,12 @@ public class InputParser {
 
         if (!line.matches("\\d+")) {
           throw new InvalidInputException("Invalid input: Expected an integer describing pile of fluts in "
-              + "schuur, or there are more piles of fluts in schuur.");
+              + "schuur, greater than 0, or more piles of fluts in schuur are entered.");
         }
 
         int schuurNumber = Integer.parseInt(line);
 
         if (schuurNumber == 0) break;
-
-        if (schuurNumber < 1) {
-          throw new InvalidInputException("Invalid input: pile of fluts must be greater than 0.");
-        }
 
         List<List<Integer>> flutBoxesInSchuur = new ArrayList<>();
         List<Integer> numberOfBoxesInPile = new ArrayList<>();

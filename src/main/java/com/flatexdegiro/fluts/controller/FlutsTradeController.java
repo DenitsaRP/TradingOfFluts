@@ -22,7 +22,7 @@ public class FlutsTradeController {
 
   @PostMapping("/calculate")
   public ResponseEntity<String> calculateTrade(@RequestParam("file") MultipartFile file) throws IOException {
-    String input = new String(file.getBytes());
+    var input = new String(file.getBytes());
     var cases = InputParser.parseInput(input);
     var result = flutsTradeService.calculateSchuurCases(cases);
     return ResponseEntity.ok(new CalculatedProfitResponse(result).toString());
