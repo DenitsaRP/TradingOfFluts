@@ -3,6 +3,7 @@
 ## Requirements
 - Java 17
 - Maven
+- Spring Boot
 
 ## Build Instructions
 1. Clone the repository.
